@@ -119,5 +119,3 @@ export const allFilterGroups = [
         selectFrom: ["moisturizing", "anti-aging", "brightening", "acne-fighting", "clarifying"]
     }
 ]
-
-

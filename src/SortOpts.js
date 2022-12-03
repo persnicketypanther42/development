@@ -5,13 +5,6 @@ import {FormControl, FormLabel, RadioGroup, FormControlLabel, Radio} from '@mui/
 
 class SortOpts extends Component {
 
-    constructor() {
-        super();
-        this.state = {
-            sort: 'rating',
-        }
-    }
-
     handleSort = (e) => {
         this.setState({
             sort: e.target.value
@@ -26,7 +19,7 @@ class SortOpts extends Component {
                 <RadioGroup className="Interxn-group"
                             row aria-label="sort"
                             name="sort"
-                            value={this.state.sort}
+                            defaultValue="rating"
                             defaultChecked="rating"
                             onChange={this.handleSort}>
                     <FormControlLabel value="rating" control={<Radio />} label="Customer Ratings" />

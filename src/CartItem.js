@@ -11,8 +11,6 @@ class CartItem extends Component {
     }
 
     render() {
-        
-
         return (
             <Card className="Cart-card">
                 <CardContent className="Card-Content">
