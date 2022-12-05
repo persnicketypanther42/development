@@ -151,7 +151,7 @@ class App extends Component {
             return <CartItem className="Cart-item"
                              product={product}
                              updateCart={this.updateCart}
-                             inCart={true}
+                             inCart={this.state.cart.includes(product)}
                              key={product.id}/>
           })}
         </div>
