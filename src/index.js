@@ -86,10 +86,10 @@ class App extends Component {
 
   resetCriteria = () => {
     this.setState({
-        resetKey: this.state.resetKey + 1,
         sort: 'rating',
-        products: allProducts,
-        filters: []
+        products: this.sortProducts(allProducts, 'rating'),
+        filters: [],
+        resetKey: this.state.resetKey + 1
     })
   }
 
@@ -110,7 +110,7 @@ class App extends Component {
           {filters}
           </div>
           <Button variant="contained"
-                  color="primary"
+                  color="secondary"
                   className="Default-Button"
                   onClick={() => this.resetCriteria()}>Reset to Defaults</Button>
         </div>
