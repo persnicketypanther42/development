@@ -19,8 +19,8 @@ class SortOpts extends Component {
                 <RadioGroup className="Interxn-group"
                             row aria-label="sort"
                             name="sort"
-                            defaultValue="rating"
-                            defaultChecked="rating"
+                            defaultValue={this.props.sort}
+                            defaultChecked={this.props.sort}
                             onChange={this.handleSort}>
                     <FormControlLabel value="rating" control={<Radio />} label="Customer Ratings" />
                     <FormControlLabel value="price" control={<Radio />} label="Price" />
