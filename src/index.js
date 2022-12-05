@@ -94,7 +94,7 @@ class App extends Component {
   }
 
   generateGridControls = () => {
-    const sorts = <SortOpts key={this.state.resetKey} updateSort={this.updateSort} />;
+    const sorts = <SortOpts key={this.state.resetKey} sort={this.state.sort} updateSort={this.updateSort} />;
     const filters = allFilterGroups.map((filterGroup) => { return <FilterOpts checked='none'
                                                                               filterTitle={filterGroup.filterTitle}
                                                                               selectFrom={filterGroup.selectFrom}
