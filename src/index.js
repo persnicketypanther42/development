@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   updateCart = (id) => {
-    let productPressed = this.state.products.find((product) => product.id === id);
+    let productPressed = allProducts.find((product) => product.id === id);
     if (this.state.cart.includes(productPressed)) {
       this.setState({
         cart: this.state.cart.filter((product) => product.id !== id),
